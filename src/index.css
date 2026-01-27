@@ -1,6 +1,11 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --color-dicom-white: #aeaeae;
+  --color-dicom-black: #1b1b1b;
+}
 
 body {
-  background-color: #1b1b1b;
-  color: #aeaeae;
+  background-color: var(--color-dicom-black);
+  color: var(--color-dicom-white);
 }
