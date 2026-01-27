@@ -46,7 +46,7 @@ export function CustomerForm({ onAdd }: Props): JSX.Element {
           value={customerService}
           onChange={(e) => setCustomerService(e.target.value)}
         >
-          <option value="" selected hidden>
+          <option value="" hidden>
             Select Service
           </option>
           <option value="consultation">Consultation</option>
