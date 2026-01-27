@@ -2,6 +2,8 @@ import { useState, type JSX } from 'react';
 
 import type { CreateCustomerPayload, Customer } from './types';
 import { CustomerForm } from './components/CustomerForm';
+import { CustomersList } from './components/CustomersList';
+import { CustomersListItem } from './components/CustomersListItem';
 import { Header } from './components/Header';
 
 export function App(): JSX.Element {
@@ -25,6 +27,15 @@ export function App(): JSX.Element {
       <Header />
       <main className="m-auto flex max-w-5xl gap-8">
         <CustomerForm onAdd={queueAppend} />
+        <CustomersList queue={queue}>
+          {queue.map((service) => (
+            <CustomersListItem
+              key={service.id}
+              customer={)service}
+              onRemove={queueRemove}
+            />
+          ))}
+        </CustomersList>
       </main>
     </>
   );
