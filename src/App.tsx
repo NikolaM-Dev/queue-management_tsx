@@ -28,10 +28,10 @@ export function App(): JSX.Element {
       <main className="m-auto flex max-w-5xl gap-8">
         <CustomerForm onAdd={queueAppend} />
         <CustomersList queue={queue}>
-          {queue.map((service) => (
+          {queue.map((customer) => (
             <CustomersListItem
-              key={service.id}
-              customer={)service}
+              key={customer.id}
+              customer={customer}
               onRemove={queueRemove}
             />
           ))}

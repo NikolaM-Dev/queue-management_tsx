@@ -1,11 +1,11 @@
 import { FaAddressBook } from 'react-icons/fa';
 import { useState, type JSX } from 'react';
 
-import type { CreateServicePayload, ServiceType } from '../types';
+import type { CreateCustomerPayload, ServiceType } from '../types';
 import { Section, SectionTitle } from './Section';
 
 type Props = {
-  onAdd: (payload: CreateServicePayload) => void;
+  onAdd: (payload: CreateCustomerPayload) => void;
 };
 
 export function CustomerForm({ onAdd }: Props): JSX.Element {
