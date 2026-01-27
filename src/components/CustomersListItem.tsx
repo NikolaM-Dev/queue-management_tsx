@@ -4,6 +4,7 @@ import { FaHourglassStart, FaCheckSquare, FaTrash } from 'react-icons/fa';
 import type { Customer } from '../types';
 import { Button } from './Button';
 import { CustomerStatus } from './CustomerStatus';
+import { When } from './When';
 
 type Props = {
   customer: Customer;
@@ -26,20 +27,24 @@ export function CustomersListItem({
         <CustomerStatus status={customer.status} />
       </div>
       <div className="flex items-center gap-2">
-        <Button
-          accent="bg-emerald-300"
-          label="Serve"
-          onClick={() => onUpdate(customer.id, 'serving')}
-        >
-          <FaHourglassStart />
-        </Button>
-        <Button
-          accent="bg-sky-300"
-          label="Complete"
-          onClick={() => onUpdate(customer.id, 'completed')}
-        >
-          <FaCheckSquare />
-        </Button>
+        <When condition={customer.status === 'waiting'}>
+          <Button
+            accent="bg-emerald-300"
+            label="Serve"
+            onClick={() => onUpdate(customer.id, 'serving')}
+          >
+            <FaHourglassStart />
+          </Button>
+        </When>
+        <When condition={customer.status === 'serving'}>
+          <Button
+            accent="bg-sky-300"
+            label="Complete"
+            onClick={() => onUpdate(customer.id, 'completed')}
+          >
+            <FaCheckSquare />
+          </Button>
+        </When>
         <Button
           accent="bg-red-300"
           label="Remove"
