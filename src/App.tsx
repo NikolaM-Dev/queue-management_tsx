@@ -18,8 +18,24 @@ export function App(): JSX.Element {
       }),
     );
   }
+
   function queueRemove(id: number): void {
-    setQueue((prev) => prev.filter((service) => service.id !== id));
+    setQueue((prev) => prev.filter((customer) => customer.id !== id));
+  }
+
+  function queueUpdateCustomerStatus(
+    id: number,
+    newStatus: Customer['status'],
+  ): void {
+    setQueue((prev) =>
+      prev.map((customer) => {
+        if (customer.id !== id) {
+          return customer;
+        }
+
+        return { ...customer, status: newStatus };
+      }),
+    );
   }
 
   return (
@@ -33,6 +49,7 @@ export function App(): JSX.Element {
               key={customer.id}
               customer={customer}
               onRemove={queueRemove}
+              onUpdate={queueUpdateCustomerStatus}
             />
           ))}
         </CustomersList>
