@@ -54,7 +54,7 @@ export function CustomerForm({ onAdd }: Props): JSX.Element {
           <option value="support">Support</option>
         </select>
         <button
-          className="flex cursor-pointer items-center justify-center gap-2 rounded-md bg-violet-500 px-4 py-2 text-base font-semibold text-white hover:opacity-90"
+          className="flex cursor-pointer items-center justify-center gap-2 rounded-md bg-violet-500 px-4 py-2 text-base font-semibold text-white opacity-90 hover:opacity-80"
           type="submit"
         >
           <FaAddressBook />
