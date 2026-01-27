@@ -6,7 +6,9 @@ type Props = {
 
 function Section({ children }: Props): JSX.Element {
   return (
-    <section className="rounded-md bg-neutral-800 p-8">{children}</section>
+    <section className="h-min rounded-md bg-neutral-800 p-8">
+      {children}
+    </section>
   );
 }
 
