@@ -17,7 +17,7 @@ export function CustomersListItem({
   onUpdate,
 }: Props): JSX.Element {
   return (
-    <article className="flex justify-between rounded-md bg-neutral-900 p-6">
+    <article className="flex justify-between rounded-md bg-[#1b1b1b] p-6">
       <div>
         <h3 className="font-bold text-gray-200">{customer.name}</h3>
         <p className="text-sm text-gray-400 capitalize">
