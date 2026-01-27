@@ -3,6 +3,7 @@ import { FaHourglassStart, FaCheckSquare, FaTrash } from 'react-icons/fa';
 
 import type { Customer } from '../types';
 import { Button } from './Button';
+import { CustomerStatus } from './CustomerStatus';
 
 type Props = {
   customer: Customer;
@@ -22,9 +23,7 @@ export function CustomersListItem({
         <p className="text-sm text-gray-400 capitalize">
           {customer.serviceType}
         </p>
-        <p className="text-sm font-semibold text-cyan-200">
-          + {customer.status}
-        </p>
+        <CustomerStatus status={customer.status} />
       </div>
       <div className="flex items-center gap-2">
         <Button
