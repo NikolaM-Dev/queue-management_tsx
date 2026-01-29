@@ -1,13 +1,16 @@
 {
+  "author": "Juan David Merchan Torres (NikolaM-Dev)",
+  "license": "GPL-3.0-only",
   "name": "queue-management_tsx",
+  "packageManager": "bun@1.3.7",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "dev": "vite",
     "format": "prettier --write .",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -18,6 +21,7 @@
     "tailwind-merge": "3.4.0",
     "tailwindcss": "4.1.18"
   },
+  "description": "A lightweight, take-a-number queue manager for cafés, clinics, pop-up stores, or any small business that needs to keep things orderly.",
   "devDependencies": {
     "@eslint/js": "9.39.1",
     "@types/node": "24.10.1",
@@ -33,5 +37,22 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "8.46.4",
     "vite": "7.2.4"
+  },
+  "bugs": {
+    "url": "https://github.com/NikolaM-Dev/queue-management_tsx/issues"
+  },
+  "homepage": "https://nikolam-dev.github.io/queue-management_tsx/",
+  "keywords": [
+    "building-in-public",
+    "bun",
+    "learning-in-public",
+    "react",
+    "tailwindcss",
+    "typescript",
+    "vite"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikolaM-Dev/queue-management_tsx.git"
   }
 }
