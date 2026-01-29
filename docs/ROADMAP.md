@@ -4,7 +4,7 @@
 
 ## 🔥 In Progress
 
-- [ ] README
+- [ ] …
 
 ## 🔮 Next
 
@@ -22,6 +22,7 @@
 
 ## Archive
 
+- [x] README
 - [x] GitHub properties
   - [x] Tags
   - [x] Demo
