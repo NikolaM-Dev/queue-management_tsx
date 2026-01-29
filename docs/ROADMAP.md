@@ -1,25 +1,36 @@
-# Road map
+# 🛣️️ Road-map
 
-## 🎯 In Progress
+> [👈 Back to README](../README.md)
+
+## 🔥 In Progress
 
 - [ ] README
 
-## 🔥 Next
+## 🔮 Next
 
-- [ ] GitHub properties
-  - [ ] Tags
-  - [ ] Demo
-  - [ ] Description
+- [ ] …
 
 ## 🥶 Wait
 
+- [ ] …
+
 ## 🎒 Backlog
 
+- [ ] …
 
 ---
 
 ## Archive
 
+- [x] GitHub properties
+  - [x] Tags
+  - [x] Demo
+  - [x] Description
+- [x] Add node version.
+- [x] Add package manager to `package.json`.
+- [x] Add missing `packake.json` properties.
+- [x] Add LICENSE.
+- [x] Change to use `docs/ROADMAP.md` instead of `.notes.md`.
 - [x] Fix `Use the defaultValue or value props on <select> instead of setting selected on <option>. Stack:   option unknown:0` error
 - [x] Change to use tailwind variables instead of hardcode the bg and fg colors.
 - [x] Fix workflows yaml files formated with singleQuote.
